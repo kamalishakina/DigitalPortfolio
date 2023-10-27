@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kamali</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@200;400;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            font-size: 62.5%;
+        }
+        body {
+            margin: 0;
+            font-family: 'Poppins';
+            background-color: #ffffff;
+        }
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2em 0 2em 0;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 4.1rem;
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+        }
+        nav ul li a:hover {
+            font-weight: bold;
+            color: #df5121;
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .content {
+            width: 90%;
+        }
+        h1 {
+            font-size: 3rem;
+            font-family: 'Playfair Display';
+            font-weight: normal;
+            margin: 4rem 0 0 0;
+            text-align: center;
+            line-height: 45px;
+        }
+        .subhead {
+            font-size: 1.8rem;
+            text-align: center;
+            margin: 7px;
+        }
+        p.employees {
+            font-size: 3.3rem;
+            margin: 1em 0 0.4em 0;
+            font-weight: 600;
+            line-height: 100%;
+            text-align: center;
+        }
+        p.details {
+            font-size: 1.6rem;
+            margin: 0;
+            text-align: center;
+            line-height: 30px;
+        }
+        .primary-cta, .secondary-cta {
+            background-color: #df5121;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.9em;
+            padding: 1em 2em;
+            display: inline-block;
+            margin: 2rem 0 4.5rem 0;
+            text-align: center;
+        }
+        .resume-cta{
+            background-color: #df5121;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            border-radius: 0.9em;
+            padding: 1em 2em;
+            display: inline-block;
+            margin: 0.2rem 0 4.5rem 0;
+            text-align: center;
+        }
+        .primary-cta:hover{background-color: #df3721;}
+        .secondary-cta:hover{
+            background-color: white;
+            border: 2px solid #df3721;
+            color: #df3721;
+        }
+        .secondary-cta {
+            background-color: white;
+            border: 2px solid #df5121;
+            color: #df5121;
+        }
+        .buttonshere {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .two-column {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .column {
+            width: 42%;
+        }
+        .skillimage {
+            width: 70%;
+            max-width: 100%;
+        }
+        #skills .center-image {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        function notify() {
+            alert("Thanks for Hiring me !!!");
+        }
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <h1>Welcome to<br><span style="font-size: 6rem;">J. Kamali Shakina's Portfolio</span></h1>
+            <p class="subhead">
+                Explore my projects and get to know more about me.
+            </p>
+            <div class="buttonshere">
+                <a href="#" class="primary-cta" onclick="notify()">Hire Me</a>
+                <a href="#projects" class="secondary-cta">Projects</a>
+            </div>
+        </div>
+    </main>
+    <div id="about" class="centered-content two-column">
+        <div class="column">
+            <p class="employees" id="about">About Me</p>
+            <p class="details">
+                I am a passionate web developer and designer with a strong desire to create beautiful and functional websites. I am dedicated to delivering high-quality work to my clients.
+            </p>
+        </div>
+        <div class="column">
+            <p class="employees" id="education">Education</p>
+            <p class="details">
+                I am currently studying Bachelor's degree in Computer Applications from St.John's College, Also I am gaining valuable knowledge and skills from Naan mudhalvan.
+            </p>
+        </div>
+    </div>
+    <div id="skills" class="centered-content">
+        <p class="employees">Skills</p>
+        <div class="center-image">
+            <img class="skillimage" src="skills.jpg" alt="skills image">
+        </div>
+    </div>
+    <div id="projects" class="centered-content">
+        <p class="employees">Projects</p>
+        <p class="details">
+            <strong>Project 1:</strong> Developed a responsive e-commerce website for a local business, increasing online sales by 30%.
+            <br>
+            <strong>Project 2:</strong> Designed and implemented a mobile app for a charity organization to facilitate online donations.
+            <br>
+            <strong>Project 3:</strong> Collaborated on a team project to create a content management system (CMS) for a startup company, streamlining content publishing.
+        </p>
+    </div>       
+    <div id="resume" class="centered-content" style="text-align: center;">
+        <p class="employees">Resume</p>
+        <p class="details" style="margin-bottom: 1em;">
+            You can <b><a href="resume.html" target="_blank">view</a></b> my resume to learn more about my professional experience and qualifications.
+        </p>
+        <a href="resume.html" target="_blank" class="resume-cta">View Resume</a>
+    </div>
+    <div id="pdf" class="centered-content">
+        <p class="employees">PDF Resume</p>
+        <iframe src="SivaResume.pdf" width="100%" height="500"></iframe>
+    </div>    
+</div>
+</body>
+</html>
